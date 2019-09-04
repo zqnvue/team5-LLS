@@ -5,7 +5,7 @@
 body{
     height:auto;
     width:auto; 
-    background:rgb(160, 208, 224)217, 224);
+    background:rgb(160, 208, 224);
     background-size:100%;
 }
 /* header部分 */
@@ -177,7 +177,7 @@ body{
     width:100%;
     height:135px;
     margin-top:45px;
-    background:url(images/green.png);
+    background:url(../images/green.png);
     display:inline-block;
   }
 .lv-under{
@@ -212,7 +212,7 @@ body{
 
 .footer{
     margin-top:800px;
-    background-image:url(images/ditu.jpg);
+    background-image:url(../images/ditu.jpg);
     height:180px;
 }
 
