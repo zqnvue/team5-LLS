@@ -6,8 +6,10 @@
     width: 210px;
     height: 896px;
     position: fixed;
+    top: 0px;
     left: 40px;
     background: #293039;
+    z-index: 499;
 }
 .bar .logo {
     height: 38px;
@@ -39,6 +41,9 @@
     height: 40px;
     background: #FFFFFF;
     overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 400;
 }
 .header .tool {
     float: left;
@@ -114,6 +119,7 @@
     background: #1890ff;
     color: #fff;
     overflow: hidden;
+    margin-top: 40px;
 }
 .search input {
     width: 443px;
