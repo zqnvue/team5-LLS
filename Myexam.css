@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+header{
+    position: relative;
+    width: 100%;
+    height: 20px;
+}
+.bar {
+    width: 210px;
+    height: 896px;
+    position: fixed;
+    left: 40px;
+    background: #293039;
+}
+.bar .logo {
+    height: 38px;
+    padding: 6px 0px 0px 4px;
+}
+.bar .name {
+    height: 40px;
+    font: 16px "微软雅黑";
+    color: #a3a3a3;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.bar .xueqi {
+    height: 35px;
+    font: 14px "微软雅黑";
+    color: #f4f4f4;
+    text-align: center;
+    padding: 0px 0px 0px 8px;
+    background: #000;
+    border: 2px solid rgb(101,109,118);
+    border-radius: 2px;
+    box-sizing: border-box;
+    line-height: 31px;
+    cursor: pointer;
+}
+header .tb{
+    /* width: 100%; */
+    background: #293039;
+    height: 40px;
+    width: 210px;
+    display: block;
+    margin-left: 40px;
+    float: left;
+}
+header .tb img{
+    padding-top: 3.5px;
+    padding-left: 5px;
+}
+header a{
+    margin: 0 18px;
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    line-height: 40px;
+    color: #505050;
+    cursor: pointer;
+    padding-top: 5px;
+    text-decoration: none
+}
+header .my {
+    float: left;
+    margin-left: 26%;
+}
+header .right{
+    float: right;
+    margin-right: 40px;
+    margin-top: 1%
+}
+header .right a{
+    font: 14px "微软雅黑";
+    color: #505050;
+}
+body .bj{
+    margin-top: 20px;
+    width: 100%;
+    height: 158px;
+    background: rgb(13, 212, 219);
+    /* width: 1280px; */
+    margin:0 auto;
+    overflow: hidden;
+}
+.bj-1{
+    margin-left: 320px;
+    /* overflow: hidden; */
+}
+body .bj .wdcy{
+    color: white;
+    font-size: 26px;
+    padding-top: 20px;
+}
+body .bj span{
+    width: 110px; 
+    height: 26px;
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 24px;
+    display: block;
+    margin-top: 20px;
+    margin-left: 7%;
+}
+body .bj p{
+    width: 465px;
+    height: 18px;
+    opacity: 0.79;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-top: 8px;
+    float: left;
+    margin-left: 7%;
+}
+body .bj img{
+    float: right;
+    width: 340px;
+    height: 141px;
+    margin-top: -65px;
+}
+body .ht{
+    width: 100%;
+    height: 30px;
+    background-color: #d8d8de;
+    box-sizing: border-box;
+}
+body .ht .sth{
+    width: 83%;
+    margin-left: 17%;
+    box-sizing: border-box;
+}
+body .ht .kk p{
+    margin-left: 21%;
+    margin-top: 1%;
+}
+body .ht .kk .kk_title{
+    background: rgb(236, 238, 241)
+}
+body .ht .kk span {
+    display: inline-block;
+    width: 16%;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+}
+body .ht .sth span{
+    display: inline-block;
+    width: 16%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #999;
+    cursor: pointer;
+}
+.footer{
+    margin-top:800px;
+    background-image:url(../len-login01/images/ditu.jpg);
+    height: 126px;
+    width: 100%;
+    bottom: 0;
+    }
+.footerW{
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+.footer1{
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: #afb0b2;
+    margin-bottom: 8px;
+    font-size: 16px;
+    margin-top: 16px;
+}
+.footer1 span{
+    color: #6c7177;
+    font-weight: 100;
+    margin-left: 10px;
+}
+img{
+    vertical-align: middle;
+    border-style: none;
+}
+.footer2{
+    width: 100%;
+    height: 25px;
+    text-align: center;
+}
+.footer2 a:nth-of-type(1){
+    margin-left: 130px;
+}
+.footer2 a{
+    display: block;
+    font-size: 14px;
+    width: 120px;
+    text-align: center;
+    color: #afb0b2;
+    float: left;
+}
+.jp{
+    height: 30px;
+    width: 600px;
+    line-height: 30px;
+    color: #6f7376;
+    text-align: center;
+    font-size: 12px;
+}
