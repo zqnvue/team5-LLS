@@ -1,0 +1,231 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+body{
+    height:auto;
+    width:auto; 
+    background:rgb(160, 208, 224);
+    background-size:100%;
+}
+/* header部分 */
+/* .header{
+    /* position:fixed; */
+/* } */ 
+.list1 li{
+    float: left;
+    margin: 0 18px;
+    height: 40px;
+    width: 70px;
+    text-align: center;
+    line-height: 40px;
+    color: #505050;
+    cursor: pointer;
+}
+.list1 li a:hover{
+   color:rgb(23, 93, 245);
+}
+.list1{
+    list-style-type:none;
+    margin-left:260px;
+    margin-top:0px;
+    position:fixed;
+    background:white;
+    width:100%;
+    /* margin-left:0px; */
+    height:30px;
+    /* float:right; */
+}
+.list2{
+    list-style-type:none;
+    /* float:right; */
+}
+/* a标签去掉下划线 */
+.major{
+    text-decoration:none;
+    color:#808080;
+}
+.lesson{
+    text-decoration:none;  
+    color:#808080;
+}
+.grow{
+    text-decoration:none;
+    color:#808080;
+}
+
+.help{
+    text-decoration:none;
+    color:#808080;
+}
+
+.test{
+    text-decoration:none;
+    color:#808080;
+}
+.lv-test1{
+    font-size:20px;
+    margin-left:300px;
+}
+.lv-test2{
+    font-size:17px;
+    margin-left:300px;
+    padding-top:25px;
+}
+.lv-test3{
+    font-size:12px;
+    margin-left:300px;
+    padding-top:25px;
+}
+.black{
+    width:220px;
+    height:980px;;
+    position:fixed;
+    left:50px;
+}
+.black p{
+    margin-top:15px;
+}
+.he-select1{
+    background:white;
+    color:black;
+    width:210px;
+    height:30px;
+    margin-top:15px;
+    
+}
+.he-select1 option{
+    text-align:"center";
+}
+/*box部分 */
+.box1{
+    border:2px solid orange;
+    width:180px;
+    height:240px;
+    float:left;
+    margin-left:300px;
+}
+.box2{
+    border:2px solid orange;
+    width:180px;
+    height:240px;
+    float:left;
+    margin-left:7px;
+}
+.box3{
+    border:2px solid orange;
+    width:180px;
+    height:240px;
+    float:left;
+    margin-left:7px;
+}
+.box4{
+    border:2px solid orange;
+    width:180px;
+    height:240px;
+    float:left;
+    margin-left:7px;
+}
+.box5{
+    border:2px solid orange;
+    width:180px;
+    height:240px;
+    float:left;
+    margin-left:7px;
+}
+
+.center{
+    margin-top:84px;
+    margin-left:250px;
+}
+.center p{
+    text-align:center;
+}
+.center a{
+    text-decoration: none;
+}
+.p1{
+   background:rgb(255, 107, 1);
+   margin-top:0px;
+   height:48px;
+   line-height: 30px;
+}
+
+.box1:hover{
+    width: 195px;
+    height:255px;
+}
+.box2:hover{
+    width: 195px;
+    height:255px;
+}
+.box3:hover{
+    width: 195px;
+    height:255px;
+}
+.box4:hover{
+    width: 195px;
+    height:255px;
+}
+.box5:hover{
+    width: 195px;
+    height:255px;
+    
+}
+/* 绿色部分 */
+.green{
+    width:100%;
+    height:135px;
+    margin-top:45px;
+    background:url(../images/green.png);
+    display:inline-block;
+  }
+.lv-under{
+    margin-left:275px;
+    
+    /* overflow: hidden; */
+}
+/* .lv-margin button{
+    margin-left:700px;
+    background:blue;
+} */
+.lvunder-text{
+    float:left;
+    margin-top:17px;
+}
+.lvunder-button{
+    float:right;
+    margin-right:280px;
+    margin-top:10px;
+   
+}
+.lvunder-button button{
+    width:80px;
+    height:36px;
+    background: #49c0e0;
+    border:0.5px solid #49c0e0;
+    font-family:微软雅黑;
+}
+
+
+/* end */
+
+.footer{
+    margin-top:800px;
+    background-image:url(../images/ditu.jpg);
+    height:180px;
+}
+
+.z-footer{
+    margin-left:300px;
+    margin-top:20px;
+   
+} 
+.x-footer{
+    margin-left:300px;
+    margin-top:20px;
+} 
+.s-footer{
+    margin-left:300px;
+    
+} 
