@@ -27,7 +27,7 @@ body{
 }
 .list1{
     list-style-type:none;
-    margin-left:260px;
+    margin-left:470px;
     margin-top:0px;
     position:fixed;
     background:white;
@@ -82,9 +82,11 @@ body{
     height:980px;;
     position:fixed;
     left:50px;
+    margin-left:200px;
 }
 .black p{
     margin-top:15px;
+    text-align:center;
 }
 .he-select1{
     background:white;
@@ -136,7 +138,9 @@ body{
 
 .center{
     margin-top:84px;
-    margin-left:250px;
+    margin-left:200px;
+    /* height:240px;
+    width:900px; */
 }
 .center p{
     text-align:center;
@@ -147,8 +151,15 @@ body{
 .p1{
    background:rgb(255, 107, 1);
    margin-top:0px;
+   color:white;
    height:48px;
-   line-height: 30px;
+   line-height: 48px;
+}
+.center a{
+    color:black;
+}
+.center a p{
+    margin-top: 16px;
 }
 
 .box1:hover{
@@ -180,8 +191,12 @@ body{
     background:url(../images/green.png);
     display:inline-block;
   }
+  .green p{
+      color:white;
+      margin-left:520px;
+  }
 .lv-under{
-    margin-left:275px;
+    margin-left:500px;
     
     /* overflow: hidden; */
 }
@@ -217,15 +232,15 @@ body{
 }
 
 .z-footer{
-    margin-left:300px;
+    margin-left:630px;
     margin-top:20px;
    
 } 
 .x-footer{
-    margin-left:300px;
+    margin-left:630px;
     margin-top:20px;
 } 
 .s-footer{
-    margin-left:300px;
+    margin-left:630px;
     
 } 
