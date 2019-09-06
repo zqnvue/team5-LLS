@@ -62,70 +62,121 @@
                 <div class="pel-span"><span>我要备课</span></div>
                 <div class="pel-span"><div class="selected"><span>添加习题</span></div></div>
               </div> -->
-              <ul class="pelette-l">
+              <div id="tab">
+              <ul class="pelette-l" >
                 <li><a href="#content1">我要上课</a></li>
                 <li><a href="#content2">查看教案</a></li>
                 <li><a href="#content3">我要备课</a></li>
                 <li><a href="#content4">添加习题</a></li>
               </ul>
+            </div>
               <div class="pelette-r">
                  <button>显示学生界面</button>
               </div>
-            </div>
-            <div class="add">
-                <div class="add-l">
-                    <text>添加习题</text>
+            </div> 
+            <div id="content">
+                <div id="content1">
+                    <div class="sp-l">
+                        <video class="l-vedio" src="../mp4/kxsp.mp4" controls width="650"></video>
+                    </div>
+                    <div class="sp-r">
+                      <div>
+                        <span>视频播放列表</span>
+                      </div>
+                        <!-- <span>01-web基础知识.mp4</span>
+                        <span>02-IDE的使用.mp4</span>
+                        <span>03-安装atom.mp4</span> -->
+                        <ul>
+                          <li>01-web基础知识.mp4</li>
+                          <li>02-IDE的使用.mp4</li>
+                          <li>03-安装atom.mp4</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="add-r">
-                  <button>添加课堂练习</button>
-                </div>
-            </div>
-            <div class="mwhite">
-                <div class="mwhite-l">
-                  <text>1.客户端和服务器的工作原理？</text>
-                </div>
-                <div class="mwhite-r">
-                  <span className="open">收起逻辑思路</span>
-                </div>
-                <div class="parse">
-                  <div class="par-span">
-                    <span><text style="text-align:center;">完全解析</text></span>
-                  </div>
-                </div>
-                <div class="box">
-                    <!-- <span>客户端发送请求到服务器，服务器响应请求给客户端。</span> -->
-                    <textarea name="box-z" id="" cols="30" rows="10">客户端发送请求到服务器，服务器响应请求给客户端。</textarea>
+                <div id="content4">
+                    <div class="add">
+                        <div class="add-l">
+                            <text>添加习题</text>
+                        </div>
+                        <div class="add-r">
+                          <button>添加课堂练习</button>
+                        </div>
+                    </div>
+                    <div class="mwhite">
+                        <div class="mwhite-l">
+                          <text>1.客户端和服务器的工作原理？</text>
+                        </div>
+                        <div class="mwhite-r">
+                          <span className="open">收起逻辑思路</span>
+                        </div>
+                        <div class="parse">
+                          <div class="par-span">
+                            <span><text style="text-align:center;">完全解析</text></span>
+                          </div>
+                        </div>
+                        <div class="box">
+                            <!-- <span>客户端发送请求到服务器，服务器响应请求给客户端。</span> -->
+                            <textarea name="box-z" id="" cols="30" rows="10">客户端发送请求到服务器，服务器响应请求给客户端。</textarea>
+                        </div>
+                    </div>
                 </div>
             </div>
             
-        </div>
+            
     </div>
 </body>
 <script>
-    // 1.构建dom树
-    // 2.查找绑定事件的元素
-var spans=document.querySelectorAll("open");
-console.log(open);
-    // 3.绑定事件
-for(var i=0;i<spans.length;i++){
-    spans[i].onclick=function(){
-        // 4.查找修改的元素
-        // 5.修改样式
-        //1）将样式封装到一个class名称中   直接修改元素的class名称
-        //2）直接修改样式  span.style.height=0；
-        //span.style.display="none"
-        //span.style.marginTop="20px"
-         if(this.className == "open"){
-            this.className="";
-        }else{//当前是关闭的
-            //把之前已经打开的全部关闭
-            var open=document.querySelector(".open");
-            if(open){
-            open.className="";
+//     // 1.构建dom树
+//     // 2.查找绑定事件的元素
+// var spans=document.querySelectorAll("open");
+// console.log(open);
+//     // 3.绑定事件
+// for(var i=0;i<spans.length;i++){
+//     spans[i].onclick=function(){
+//         // 4.查找修改的元素
+//         // 5.修改样式
+//         //1）将样式封装到一个class名称中   直接修改元素的class名称
+//         //2）直接修改样式  span.style.height=0；
+//         //span.style.display="none"
+//         //span.style.marginTop="20px"
+//          if(this.className == "open"){
+//             this.className="";
+//         }else{//当前是关闭的
+//             //把之前已经打开的全部关闭
+//             var open=document.querySelector(".open");
+//             if(open){
+//             open.className="";
+//         }
+//            this.className="open";//展开当前的
+//         }
+//     }
+// }
+
+    //需求：当点击某一个标签的时候，下面对应的div显示，其他div隐藏
+    //查找触发事件的元素 a
+    var as=document.querySelectorAll("#tab a");
+    //遍历
+    for(var i=0;i<as.length;i++){
+      //绑定事件处理函数
+      as[i].onclick=function(){
+        //隐藏其他的div
+        var divs=document.querySelectorAll("#content>div");
+        for(var i=0;i<divs.length;i++){
+          divs[i].style.display="none";
         }
-           this.className="open";//展开当前的
-        }
+        //让对应的div显示
+        //获得当前a的href
+        var i=this.href.lastIndexOf("#");
+        var id=this.href.slice(i);
+        console.log(id);
+        document.querySelector(id).style.display="block";
+      }
+
     }
-}
+
+
+
+
+    
 </script>
 </html>
