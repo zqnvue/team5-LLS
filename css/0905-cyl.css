@@ -149,12 +149,13 @@
     .pelette-l span{
         color:#808080;
         font-size:16px;
+        text-align: center;
     }
 
-     .pel-span span:hover{
+     .pelette-l span:hover{
         color:rgba(0, 140, 255, 0.719);
     } 
-.pel-span{
+.pelette-l span{
     height:40px;
     /* font-size:20px; */
     width:160px;
@@ -163,10 +164,10 @@
     /* padding-left:18px; */
     float:left;
 }
-.pel-span span{
+.pelette-l span{
     margin-left:70px;
 }
-.pel-span:hover{
+.pelette-l span:hover{
     background:lightgray;
 
 }
@@ -221,7 +222,10 @@
   margin-right:20px;;
 }
 .mwhite-r span{
-    color:#ebe2e2b0;
+    background:#ebe2e2b0;
+    background:url(../images/minus.png)no-repeat right center;
+       /*padding-left左内边距  */
+    padding-right:20px;
 }
 .parse{
     margin-left:180px;
@@ -249,4 +253,9 @@ textarea{
     width:1000px;
     height:600px;
     font-size:20px;
+}
+ /* 展开样式 */
+ .open{
+    background-image:url(../images/add.png);
+    height:1000px;
 }
