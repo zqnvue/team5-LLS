@@ -59,6 +59,7 @@ header .right .zxtw{
     background: #49c0e0;
     color: white;
     line-height: 40px;
+    height: 40px;
 }
 header .right{
     float: right;
