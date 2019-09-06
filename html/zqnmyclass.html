@@ -45,36 +45,42 @@
 
 
     <div class="main">
-            <div class="m-h-lesson">
-                <p>WEB前端基础（HTML5和CSS3）基础</p>
-                <a href="">返回></a>
-            </div>
-            <div class="m-h-select">
-                <ul class="m-h-s-box">
-                    <li><span>我要上课</span></li>
-                    <li><span>查看教室</span></li>
-                    <li><span>我要备课</span></li>
-                    <li><span>添加习题</span></li>
-                </ul>
-            </div>
-
-        <div class="m-center">   
-            <div class="m-c-top">说明：该视频暂时无法播放，请安装Flash播放器。为了能够正常观看视频，请点击下载最新版本。<a href="">立即下载</a></div>
-            <div class="m-c-down">
-                <div class="m-c-d-left"></div>
-                <div class="m-c-d-right">
-                    <div class="m-c-d-r-top">
-                        <div class="m-c-d-r-t-box1">
-                            <img src="" alt="">
-                            <span>视频播放列表</span>
+        <div class="m-h-lesson">
+            <p>WEB前端基础（HTML5和CSS3）基础</p>
+            <a href="">返回></a>
+        </div>
+        <div class="m-h-select">
+            <ul class="m-h-s-box" id="tab">
+                <li><a href="#content1">我要上课</a></li>
+                <li><a href="#content2">查看教室</a></li>
+                <li><a href="#content3">我要备课</a></li>
+                <li><a href="#content4">添加习题</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <div class="m-center" id="content1">   
+                    <div class="m-c-top">说明：该视频暂时无法播放，请安装Flash播放器。为了能够正常观看视频，请点击下载最新版本。<a href="">立即下载</a></div>
+                    <div class="m-c-down">
+                        <div class="m-c-d-left">
+                            <video src="../images/running.mp4" controls width="680px" height="302px"></video>
+                        </div>
+                        <div class="m-c-d-right">
+                            <div class="m-c-d-r-top">
+                                <img src="../images/video.png" alt="">
+                                <span>视频播放列表</span>
+                            </div>
+                            <div class="down2">我不明白我不明白1</div>
+                            <div class="down2">我不明白我不明白2</div>
+                            <div class="down2">我不明白我不明白3</div>
                         </div>
                     </div>
-                    <div class="m-c-d-r-down">
-                        
-                    </div>
-                </div>
             </div>
+    
+            <div class="m-center" id="content2">查看教室</div>
+            <div class="m-center" id="content3">我要备课</div>
+            <div class="m-center" id="content4">添加习题</div>
         </div>
+        
     </div>
 
 
@@ -95,5 +101,27 @@
             <div class="b3">Copyright 2017 联想 (北京) 有限公司 京ICP备11035381 | 京公网安备110108007970号</div>
         </div>
     </div>
+
+    <script>
+        var as=document.querySelectorAll("#tab a");
+    //遍历
+    for(var i=0;i<as.length;i++){
+      //绑定事件处理函数
+      as[i].onclick=function(){
+        //隐藏其他的div
+        var divs=document.querySelectorAll("#content>div");
+        for(var i=0;i<divs.length;i++){
+          divs[i].style.display="none";
+        }
+        //让对应的div显示
+        //获得当前a的href
+        var i=this.href.lastIndexOf("#");
+        var id=this.href.slice(i);
+        console.log(id);
+        document.querySelector(id).style.display="block";
+      }
+
+    }
+    </script>
 </body>
 </html>
