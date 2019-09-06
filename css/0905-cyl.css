@@ -151,9 +151,9 @@
         font-size:16px;
     }
 
-    .pelette-l span:hover{
-        color:skyblue;
-    }
+     .pel-span span:hover{
+        color:rgba(0, 140, 255, 0.719);
+    } 
 .pel-span{
     height:40px;
     /* font-size:20px; */
@@ -165,6 +165,10 @@
 }
 .pel-span span{
     margin-left:70px;
+}
+.pel-span:hover{
+    background:lightgray;
+
 }
 .pelette-r button{
     height:36px;
@@ -207,6 +211,7 @@
     margin-top: 26px;
     /* height:600px; */
     overflow: hidden;
+
 }
 .mwhite-l{
   float: left;
@@ -214,6 +219,9 @@
 .mwhite-r{
   float: right;
   margin-right:20px;;
+}
+.mwhite-r span{
+    color:#ebe2e2b0;
 }
 .parse{
     margin-left:180px;
@@ -236,4 +244,9 @@
     width:1000px;
     height:600px;
     background: #cccccc;
+}
+textarea{
+    width:1000px;
+    height:600px;
+    font-size:20px;
 }
