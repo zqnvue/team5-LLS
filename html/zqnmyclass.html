@@ -45,36 +45,48 @@
 
 
     <div class="main">
-            <div class="m-h-lesson">
-                <p>WEB前端基础（HTML5和CSS3）基础</p>
-                <a href="">返回></a>
-            </div>
-            <div class="m-h-select">
-                <ul class="m-h-s-box">
-                    <li><span>我要上课</span></li>
-                    <li><span>查看教室</span></li>
-                    <li><span>我要备课</span></li>
-                    <li><span>添加习题</span></li>
-                </ul>
-            </div>
-
-        <div class="m-center">   
-            <div class="m-c-top">说明：该视频暂时无法播放，请安装Flash播放器。为了能够正常观看视频，请点击下载最新版本。<a href="">立即下载</a></div>
-            <div class="m-c-down">
-                <div class="m-c-d-left">
-                    <video src="../images/running.mp4" controls width="680px" height="302px"></video>
-                </div>
-                <div class="m-c-d-right">
-                    <div class="m-c-d-r-top">
-                        <img src="../images/video.png" alt="">
-                        <span>视频播放列表</span>
-                    </div>
-                    <div class="down2">我不明白我不明白1</div>
-                    <div class="down2">我不明白我不明白2</div>
-                    <div class="down2">我不明白我不明白3</div>
-                </div>
-            </div>
+        <div class="m-h-lesson">
+            <p>WEB前端基础（HTML5和CSS3）基础</p>
+            <a href="">返回></a>
         </div>
+        <div class="m-h-select">
+            <ul id="tab-head">
+                <li><a href="#content1" class="selected">我要上课</a></li>
+                <li><a href="#content2">查看教室</a></li>
+                <li><a href="#content3">我要备课</a></li>
+                <li><a href="#content4">添加习题</a></li>
+            </ul>
+        </div>
+        <div id="tab-content">
+            <div class="m-center show">
+                    <div class="m-c-top">说明：该视频暂时无法播放，请安装Flash播放器。为了能够正常观看视频，请点击下载最新版本。<a href="">立即下载</a></div>
+                    <div class="m-c-down">
+                        <div class="m-c-d-left">
+                            <video class="show" src="../images/running.mp4" controls width="680px" height="302px"></video>
+                            <video src="../images/babb.mp4" controls width="680px" height="302px"></video>
+                            <video src="../images/kuang.mp4" controls width="680px" height="302px"></video>
+                        </div>
+                        <div class="m-c-d-right">
+                            <div class="m-c-d-r-top1">
+                                <div class="m-c-d-r-top">
+                                    <img src="../images/video.png" alt="">
+                                    <span>视频播放列表</span>
+                                </div>
+                            </div>
+                            <div class="v-head">
+                                <div class="down2 selected">下大雨11111</div>
+                                <div class="down2">拔萝卜22222</div>
+                                <div class="down2">哐哐哐33333</div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+    
+            <div class="m-center">查看教室111</div>
+            <div class="m-center">我要备课222</div>
+            <div class="m-center">添加习题333</div>
+        </div>
+        
     </div>
 
 
@@ -95,5 +107,46 @@
             <div class="b3">Copyright 2017 联想 (北京) 有限公司 京ICP备11035381 | 京公网安备110108007970号</div>
         </div>
     </div>
+
+    <script>
+        var tabs = document.querySelectorAll('#tab-head a');
+        var contents = document.querySelectorAll('#tab-content .m-center');
+        (function changeTab(){
+            for(var i=0;i<tabs.length;i++){
+                tabs[i].onclick = showTab;
+            }
+        })();
+        function showTab(){
+            for(var i=0;i<tabs.length;i++){
+                if(tabs[i] === this){
+                    tabs[i].className = "selected";
+                    contents[i].className = "m-center show";
+                }else{
+                    tabs[i].className = "";
+                    contents[i].className = "m-center";
+                }
+            }
+        }
+
+        // 第二部分，视频切换
+        var vs = document.getElementsByClassName('v-head')[0].getElementsByClassName('down2');
+        var ds = document.getElementsByClassName('m-c-d-left')[0].getElementsByTagName('video');    
+        (function changeVideo(){
+            for(var i=0;i<vs.length;i++){
+                vs[i].onclick = showVideo;
+            }
+        })();
+        function showVideo(){
+            for(var i=0;i<vs.length;i++){
+                if(vs[i] === this){
+                    vs[i].className = "down2 selected";
+                    ds[i].className = "show";
+                }else{
+                    vs[i].className = "down2";
+                    ds[i].className = "";
+                }
+            }
+        }
+    </script>
 </body>
 </html>
