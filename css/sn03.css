@@ -169,7 +169,7 @@ header .my li a:hover{
 .mean{
     width: 90%;
     height: 450px;
-    background: pink;
+    /* background: pink; */
     margin-left: 70px;
 }
 /* 第一页开始 */
@@ -285,17 +285,29 @@ form{
 .old-pwd{
     width: 100%;
     height: 40px;
-    border: 1px solid #e3e7e9;
+    /* border: 1px solid #e3e7e9; */
     line-height: 40px;
     box-sizing: border-box;
 }
 .bd input{
     width: 100%;
     height: 40px;
-    border: 1px solid #e3e7e9;
+    /* border: 1px solid #e3e7e9; */
     line-height: 40px;
-    padding-left: 15px;
+    padding-left: 10px;
     box-sizing: border-box;
+}
+.tis{
+    font-size: 14px;
+    color: #e3e7e9;
+    margin: 5px 0px 15px 0px;
+}
+.tij{
+    color: #fff;
+    margin-top: 35px;
+    background: #49c0e0;
+    border-radius: 5px;
+    border: 0;
 }
 /* 表单结束 */
 
