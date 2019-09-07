@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/sn03.css">
+</head>
+<body>
+    <!-- header开始 -->
+    <header>
+        <!-- 左上角logo开始 -->
+        <div class="bar">
+            <div class="tb">
+                <img src="../images/logo.png" alt="">
+            </div>
+        </div>
+        <!-- 左上角logo结束 -->
+
+        <!-- 顶部切换开始 -->
+        <div class="headerTop">
+            <div class="my">
+                <li><a href="">我教的课程</a></li>
+                <li><a href="">考试管理</a></li>
+                <li><a href="">学员管理</a></li>
+                <li><a href="">我的贡献</a></li>
+            </div>
+            <div class="right">
+                <li><img src="../images/news.png" alt=""></li>
+                <li><a href="">苏宁</a></li>
+                <li>
+                    <span class="spana"><img src="../images/problem.png" alt=""></span>
+                    <span class="spanb">在线提问</span>
+                </li>
+                <li><img src="../images/quit.png" title="退出登录" alt=""></li>
+            </div>      
+        </div>
+        <!-- 顶部切换结束 -->
+    </header>
+    <!-- header结束 -->
+
+    <!-- 背景蓝色横条开始 -->
+    <div class="bj">
+        <span>个人中心</span>
+    </div>
+    <!-- 背景蓝色横条结束 -->
+
+    <!-- 灰色切换条开始 -->
+    <div class="bar">
+        <ul class="bar-top">
+            <li class="selected" onclick="sk(0)">基本资料</li>
+            <li onclick="sk(1)">修改密码</li>
+            <li onclick="sk(2)">意见反馈</li>
+        </ul>
+    </div>
+    <!-- 灰色切换条结束 -->
+
+    <!-- 基本资料开始 -->
+    <div class="body">
+        <div class="mean" style="display: block;">
+            <div class="mean-top">
+                基本资料
+            </div>
+            <div class="mean-nr">
+                <div class="mean-nr-z">
+                    <div class="mean-mc">
+                        <div>姓名</div>
+                        <input type="text" placeholder="苏宁">
+                    </div>
+                    <div class="mean-mc">
+                        <div>工号</div>
+                        <input type="text" placeholder="sn990102">
+                    </div>
+                    <div class="mean-mc">
+                        <div>出生日期</div>
+                        <input type="text" placeholder="1999-01-02">
+                    </div>
+                    <div class="mean-mc">
+                        <div>邮箱</div>
+                        <input type="text" placeholder="910205841@qq.com">
+                    </div>
+                </div>
+                <div class="mean-nr-y">
+                    <div class="mean-mc">
+                        <div>职位</div>                        
+                        <input type="text" placeholder="学生">
+                    </div> 
+                    <div class="mean-mc">
+                        <div>性别</div>                        
+                        <input type="text" placeholder="女">
+                    </div>
+                    <div class="mean-mc">
+                        <div>身份证号</div>                        
+                        <input type="text" placeholder="372925**********45">                    </div>   
+                    </div>
+                </div>
+            </div>
+        <div class="mean" style="display: none;">
+            <!-- 进度条开始 -->
+            <div class="jind">
+                <div class="jind-top">
+                    <span>***</span>
+                    <img src="../images/passwd.png" alt="">
+                    <span>***</span>
+                    <span>***</span>
+                    <span>***</span>
+                    <img src="../images/news.png" alt="">
+                    <span>***</span>
+                </div>
+                <div class="jind-f">
+                    <p class="jind-z">修改密码</p>
+                    <p class="jind-y">完成</p>
+                </div>
+            </div>
+            <!-- 进度条结束 -->
+            <!-- 表单开始 -->
+            <div class="bd">
+                <form action="">
+                    <div class="old-pwd">请输入你的原密码</div>
+                    <input type="text" class="new-pwd" placeholder="请在这里输入你的原密码">
+                    <div class="old-pwd">请输入你的新密码</div>
+                    <input type="text" class="new-pwd" placeholder="请在这里输入你的新密码">
+                </form>
+            </div>
+            <!-- 表单结束 -->
+        </div>
+        <div class="mean" style="display: none;">意见反馈</div>    
+    </div>
+    <!-- 基本资料结束 -->
+    </body>
+    <script>
+        //个人中心导航切换
+        var bars = document.getElementsByClassName('bar-top')[0].getElementsByTagName('li');
+        // console.log(bars);
+        var means = document.getElementsByClassName('body')[0].getElementsByClassName('mean');
+        // console.log(means);
+        function sk(index){
+            for(var i=0;i<bars.length;i++){
+                if(i == index){
+                    bars[i].className = 'selected';
+                    means[i].style.display = 'block';
+                }else{
+                    bars[i].className = '';
+                    means[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+</html>
