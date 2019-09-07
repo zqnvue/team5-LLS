@@ -76,7 +76,7 @@
         <!-- </div> -->
 
         <div class="mbody">
-                <div class="main-body" style="display: block;">
+            <div class="main-body" style="display: block;">
                     <div class="main-y-h">
                         <span>说明：如果该视屏暂时无法播放，请安装Flash播放器，为了能够正常观看视频，请点击下载最新版本。</span>
                         <a href="" class="ljxz"><i>立即下载</i></a>                
@@ -103,39 +103,37 @@
                             </div>
                         </div>            
                     </div>
-                </div>
-                <div class="main-body" style="display: none;">查看教案123456789</div>
-                <div class="main-body" style="display: none;">我要备课123456789</div>
-                <div class="main-body" style="display: none;">
-                    <div class="add">
-                        <div class="add-z">
-                            <span>添加习题</span>
-                        </div>
-                        <div class="add-y">
-                            <span>添加课堂练习</span>
-                        </div>
+            </div>
+            <div class="main-body" style="display: none;">查看教案123456789</div>
+            <div class="main-body" style="display: none;">我要备课123456789</div>
+            <div class="main-body" style="display: none;">
+                <div class="add">
+                    <div class="add-z">
+                        <span>添加习题</span>
                     </div>
-                    <div class="add-t">
-                        <div class="t-one">
-                            <div class="t-one-tm">
-                                <span>1.客户端和服务端的工作原理？</span>
-                            </div>
-                            <div class="t-one-sl">
-                                <span>收起解题思路</span>
-                                <img src="../images/sjt.png" alt="">
-                            </div>
-                        </div>
-                        <div class="t-one-nr">
-                            <div class="t-one-zt">
-                                <img src="../images/file.png" alt="">
-                                <span>完全解析</span>
-                            </div>
-                            <!-- <div class="t-one-jx" placeholder="客户端发送请求服务器，服务器响应给客户端。">客户端发送请求服务器，服务器响应给客户端。</div> -->
-                            <!-- <input type="text" placeholder="客户端发送请求服务器，服务器响应给客户端。"> -->
-                            <textarea name="" id="" cols="125" rows="30" placeholder="客户端发送请求服务器，服务器响应给客户端。"></textarea>
-                        </div>
+                    <div class="add-y">
+                        <span>添加课堂练习</span>
                     </div>
                 </div>
+                <div class="add-t">
+                    <div class="t-one">
+                        <div class="t-one-tm">
+                            <span>1.客户端和服务端的工作原理？</span>
+                        </div>
+                        <div class="t-one-sl">
+                            <span>收起解题思路</span>
+                            <img src="../images/sjt.png" alt="">
+                        </div>
+                    </div>
+                    <div class="t-one-nr">
+                        <div class="t-one-zt">
+                            <img src="../images/file.png" alt="">
+                            <span>完全解析</span>
+                        </div>
+                        <textarea name="" id="" cols="125" rows="30" placeholder="客户端发送请求服务器，服务器响应给客户端。"></textarea>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -163,11 +161,8 @@
     var tabs = document.getElementsByClassName('main-y-top2')[0].getElementsByTagName('li');
     // console.log(tabs);
     var contents = document.getElementsByClassName('mbody')[0].getElementsByClassName('main-body');
-    // console.log(contents);
-    var videoTitle = document.getElementsByClassName('qh-sp')[0].getElementsByTagName('div');
-    // console.log(videoTitle);
-    var videoSrc = document.getElementsByClassName('sp-z')[0].getElementsByTagName('video');
-    // console.log(videoSrc);
+    console.log(contents);
+    
     function sk(index){
         for(var i=0;i<tabs.length;i++){
             if(i == index){
@@ -181,6 +176,10 @@
     }
 
     // 视频列表切换按钮
+    var videoTitle = document.getElementsByClassName('qh-sp')[0].getElementsByTagName('div');
+    // console.log(videoTitle);
+    var videoSrc = document.getElementsByClassName('sp-z')[0].getElementsByTagName('video');
+    // console.log(videoSrc);
     function sp(index) {
             for(var i=0;i<videoTitle.length;i++){
                 if(i == index) {
