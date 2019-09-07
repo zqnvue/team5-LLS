@@ -17,17 +17,20 @@
         
         <div class="headerTop">
             <div class="my">
-                <a href="" class="wjdzy">我教的专业</a>
-                <a href="" class="wjdkc">我教的课程</a>
-                <a href="" class="ksgl">考试管理</a>
-                <a href="" class="xygl">学员管理</a>
-                <a href="" class="wdgx">我的贡献</a>
+                <li><a href="">我教的课程</a></li>
+                <li><a href="">考试管理</a></li>
+                <li><a href="">学员管理</a></li>
+                <li><a href="">我的贡献</a></li>
+                
             </div>
             <div class="right">
-                <a href="" class="tz">通知</a>
-                <a href="" class="me">苏宁</a>
-                <a href="" class="zxtw">在线提问</a>
-                <a href="" class="tc">退出</a>
+                <li><img src="../images/news.png" alt=""></li>
+                <li><a href="">苏宁</a></li>
+                <li>
+                    <span class="spana"><img src="../images/problem.png" alt=""></span>
+                    <span class="spanb">在线提问</span>
+                </li>
+                <li><img src="../images/quit.png" title="退出登录" alt=""></li>
             </div>      
         </div>      
     </header>
@@ -56,62 +59,83 @@
         </div>
 
         <!-- 右边 -->
-        <div class="main-y">
+        <!-- <div class="main-y"> -->
             <div class="main-y-top">
                 <div class="main-y-top2">
                     <div class="main-y-top3">
-                        <span class="sk current">我要上课</span>
-                        <span class="sk">查看教案</span>
-                        <span class="sk">我要备课</span>
-                        <span class="sk">添加习题</span>
+                        <li class="selected " onClick="sk(0)">我要上课</li>
+                        <li onClick="sk(1)">查看教案</li>
+                        <li onClick="sk(2)">我要备课</li>
+                        <li onClick="sk(3)">添加习题</li>
                     </div>
                     <div class="main-y-top4">
                         <span class="xsjm">显示学生界面</span>
                     </div>
                 </div>
             </div>
+        <!-- </div> -->
 
-            <div class="main-y-h">
-                <span>说明：如果该视屏暂时无法播放，请安装Flash播放器，为了能够正常观看视频，请点击下载最新版本。</span>
-                <a href="" class="ljxz"><i>立即下载</i></a>
-                
-            </div>
-
-            <!-- 播放视频 -->
-            <div class="sp">
-                <!-- 左边视频展示 -->
-                <div class="sp-z">
-                    <video src="../mp4/04-课堂练习.mp4" controls width="570"></video>
-                </div>
-
-                <!-- 右边视频列表 -->
-                <div class="sp-y">
-                    <div class="lieb">
-                        <img src="../images/user.png" alt="">
-                        <a href="">视频播放列表</a>
+        <div class="mbody">
+                <div class="main-body" style="display: block;">
+                    <div class="main-y-h">
+                        <span>说明：如果该视屏暂时无法播放，请安装Flash播放器，为了能够正常观看视频，请点击下载最新版本。</span>
+                        <a href="" class="ljxz"><i>立即下载</i></a>                
                     </div>
-                    <div class="lieb-z">
-                        <div class="lieb-1 current" >
-                            <a href="" class="lieb-1-1">01-web基础知识.mp4</a>
-                            <div class="lieb-1-2">
-                                <a href="" >提前缓存</a>
-                            </div>
+    
+                <!-- 播放视频 -->
+                    <div class="sp">
+                    <!-- 左边视频展示 -->
+                        <div class="sp-z">
+                            <video style="display: block" src="../mp4/04-课堂练习.mp4" controls width="650"></video>
+                            <video style="display: none" src="../mp4/碧瑶之死.mp4" controls width="650"></video>
+                            <video style="display: none" src="../mp4/植物大战僵尸2宣传片.mp4" controls width="650"></video>                            
                         </div>
-                        <div class="lieb-1" >
-                            <a href="" class="lieb-1-3">02-IDE的使用.mp4</a>
-                            <div class="lieb-1-4">
-                                <a href="" >提前缓存</a>
+                            <!-- 右边视频列表 -->
+                        <div class="sp-y">
+                            <div class="lieb">
+                                <img src="../images/video2.png" alt="">
+                                <a href="">视频播放列表</a>
                             </div>
-                        </div>
-                        <div class="lieb-1" >
-                                <a href="" class="lieb-1-3">03-安装atom.mp4</a>
-                                <div class="lieb-1-4">
-                                    <a href="" >提前缓存</a>
-                                </div>
+                            <div class="qh-sp">
+                                <div class="vTitlexz" onClick="sp(0)">01-web基础知识.mp4</div>
+                                <div class="vTitlen" onClick="sp(1)">02-IDE的使用.mp4</div>
+                                <div class="vTitlen" onClick="sp(2)">03-安装atom.mp4</div>                              
                             </div>
+                        </div>            
                     </div>
                 </div>
-            </div>
+                <div class="main-body" style="display: none;">查看教案123456789</div>
+                <div class="main-body" style="display: none;">我要备课123456789</div>
+                <div class="main-body" style="display: none;">
+                    <div class="add">
+                        <div class="add-z">
+                            <span>添加习题</span>
+                        </div>
+                        <div class="add-y">
+                            <span>添加课堂练习</span>
+                        </div>
+                    </div>
+                    <div class="add-t">
+                        <div class="t-one">
+                            <div class="t-one-tm">
+                                <span>1.客户端和服务端的工作原理？</span>
+                            </div>
+                            <div class="t-one-sl">
+                                <span>收起解题思路</span>
+                                <img src="../images/sjt.png" alt="">
+                            </div>
+                        </div>
+                        <div class="t-one-nr">
+                            <div class="t-one-zt">
+                                <img src="../images/file.png" alt="">
+                                <span>完全解析</span>
+                            </div>
+                            <!-- <div class="t-one-jx" placeholder="客户端发送请求服务器，服务器响应给客户端。">客户端发送请求服务器，服务器响应给客户端。</div> -->
+                            <!-- <input type="text" placeholder="客户端发送请求服务器，服务器响应给客户端。"> -->
+                            <textarea name="" id="" cols="125" rows="30" placeholder="客户端发送请求服务器，服务器响应给客户端。"></textarea>
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
 
@@ -134,31 +158,42 @@
         </div>
     </div>
 </body>
-<!-- <script>
-    //1.构建DOM树
-    //2.查找绑定事件的元素
-    var spans = document.querySelectorAll('span');
-    console.log(spans);
-    //3.绑定事件
-    for(var i = 0;i<spans.length;i++){
-        spans[i].onclick = function(){
-    //4.查找要修改的元素
-    //5.修改样式
-            //1.将样式封装到一个class名称中，直接修改该元素的class名称
-            //2.直接修改样式，span.style.height = 0;
-            //span.style.display = "none";
-            //span.style.marginTop = "20px";
-            if(this.className == "open"){   //当前是展开的
-                this.className = "";
-            }else{  //当前是关闭的
-            //把之前已经打开的全部关闭
-                var open = document.querySelector(".open");
-                    if(open){
-                        open.className = "";
-                    }              
-                this.className = "open";//展开当前的
+<script>
+    // 我要上课导航按钮
+    var tabs = document.getElementsByClassName('main-y-top2')[0].getElementsByTagName('li');
+    // console.log(tabs);
+    var contents = document.getElementsByClassName('mbody')[0].getElementsByClassName('main-body');
+    // console.log(contents);
+    var videoTitle = document.getElementsByClassName('qh-sp')[0].getElementsByTagName('div');
+    // console.log(videoTitle);
+    var videoSrc = document.getElementsByClassName('sp-z')[0].getElementsByTagName('video');
+    // console.log(videoSrc);
+    function sk(index){
+        for(var i=0;i<tabs.length;i++){
+            if(i == index){
+                tabs[i].className = 'selected';
+                contents[i].style.display = 'block';
+            }else{
+                tabs[i].className = '';
+                contents[i].style.display = 'none';
             }
         }
     }
-</script> -->
+
+    // 视频列表切换按钮
+    function sp(index) {
+            for(var i=0;i<videoTitle.length;i++){
+                if(i == index) {
+                    videoTitle[i].style.background = '#49c0e0';
+                    videoTitle[i].style.color = '#FFF';
+                    videoSrc[i].style.display = 'block';
+                }else{
+                    videoTitle[i].style.background = '#fff';
+                    videoTitle[i].style.color = '#000';
+                    videoSrc[i].style.display = 'none';
+                }
+            }
+        }
+    
+</script>
 </html>
