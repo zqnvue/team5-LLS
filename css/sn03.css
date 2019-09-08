@@ -136,21 +136,19 @@ header .my li a:hover{
 
 /* 灰色切换条开始 */
 .selected{
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     background-color:#fff;
     color:#29392e;
 }
 .bar{
     width: 100%;
     height: 30px;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     font-size: 14px;
-    /* overflow: hidden; */
     background: #e3e7e9;
     float: left;
 }
 .bar-top{
-    /* float: left; */
     width: 90%;
     line-height: 30px;
     margin: 0 auto;
@@ -168,9 +166,10 @@ header .my li a:hover{
 /* 基本资料开始 */
 .mean{
     width: 90%;
-    height: 450px;
+    height: 440px;
     /* background: pink; */
     margin-left: 70px;
+    box-sizing: border-box;
 }
 /* 第一页开始 */
 .mean-top{
@@ -203,7 +202,6 @@ header .my li a:hover{
     width: 100%;
     box-sizing: border-box;
     margin:0px 0px 7px 0px;
-
 }
  .mean-mc div{
     width: 30%;
@@ -267,7 +265,6 @@ header .my li a:hover{
     color: #e3e7e9;
 }
 /* 进度条结束 */
-
 /* 表单开始 */
 .bd{
     width: 50%;
@@ -282,7 +279,7 @@ form{
     /* background: #a08ee0; */
     margin: 0 auto;
 }
-.old-pwd{
+.pwd{
     width: 100%;
     height: 40px;
     /* border: 1px solid #e3e7e9; */
@@ -310,6 +307,135 @@ form{
     border: 0;
 }
 /* 表单结束 */
-
 /* 第二页结束 */
+
+/* 第三页开始 */
+/* 意见条数开始 */
+.view{
+    width: 100%;
+    height: 50px;
+    /* background: #66b9ef; */
+    margin-top: 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.my-view{
+    width: 55%;
+    /* height: 50px; */
+    line-height: 50px;
+    margin: 0 auto;
+    color: #afb0b2;
+    /* background: tan; */
+}
+.view li{
+    float: left;
+    width: 33%;
+    list-style: none;
+    text-align: center;
+    margin: 0 auto;
+}
+.view b{
+    color: green;
+    font-size: 30px;
+    font-style: italic;
+    padding: 0px 3px 0px 3px;
+}
+/* 意见条数结束 */
+/* 意见条数开始 */
+.idea{
+    width: 90%;
+    overflow: hidden;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 10px auto;
+}
+.my-idea{
+    width: 11%;
+    /* background: green; */
+    border-left: 5px solid #66b9ef;
+    float: left;
+}
+.my-fk{
+    width: 11%;
+    background: #66b9ef;
+    float: right;
+    /* margin-right: 30px; */
+}
+.idea img{
+    width: 20px;
+}
+/* 意见条数结束 */
+/* 中心开始 */
+.main-top{
+    width: 87%;
+    height: 300px;
+    margin: 0 auto;
+    /* background: cornsilk; */
+    font-size: 14px;
+}
+.main-top .main-nr span{
+    cursor: pointer;
+}
+.main-bar{
+    width: 100%;
+    height: 50px;
+    background: #e3e7e9;
+    border-radius: 5px;
+    overflow: hidden;
+    line-height: 50px;
+}
+.main-bar span{
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.opinion{
+    float: left;
+    width: 55%;
+    /* background: navy; */
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+.start-time{
+    float: left;
+    width: 20%;
+    /* background: rgb(102, 102, 116); */
+    box-sizing: border-box;
+    text-align: center;
+}
+.status{
+    width: 8%;
+    /* background: aqua; */
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+}
+.operate{
+    float: right;
+    text-align: center;
+    width: 17%;
+    /* background: lightblue; */
+    box-sizing: border-box;
+}
+.main-nr{
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid #e3e7e9; */
+    border-radius: 5px;
+    overflow: hidden;
+    line-height: 50px;
+    white-space: normal;
+    box-sizing: border-box;
+}
+.main-nr span{
+    color: #8a8a8b;
+}
+.main-nr .operate img{
+    width: 15px;
+}
+.main-nr .operate span{
+    color: #66b9ef;
+}
+/* 中心结束 */
+/* 第三页结束 */
 /* 基本资料结束 */
