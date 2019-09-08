@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.bar {
+    width: 210px;
+    height: 40px;
+    position: fixed;
+    top: 0px;
+    left: 40px;
+    background: #4abfe0;
+    z-index: 499;
+}
+.bar .logo {
+    height: 38px;
+    padding: 6px 0px 0px 4px;
+}
+.header {
+    width: 100%;
+    height: 40px;
+    background: #FFFFFF;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 400;
+}
+.header .tool {
+    float: left;
+    width: 700px;
+    height: 40px;
+    margin-left: 337px;
+    overflow: hidden;
+}
+.header .tool ul li {
+    float: left;
+    width: 60px;
+    height: 40px;
+    margin: 0 18px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    list-style: none;
+}
+.header .tool ul li a{
+    font: 14px "微软雅黑";
+    color: #505050;
+    text-decoration: none;
+}
+.header .user {
+    float: right;
+    width: 300px;
+    height: 40px;
+    margin-right: -10px;
+    overflow: hidden;
+}
+.header .user #fl {
+    float: left;
+}
+.header .user .uname {
+    width: 70px;
+    height: 38px;
+    text-align: center;
+    padding-top:10px; 
+    font: 14px "微软雅黑";
+    color: #A3A3A4;
+}
+.header .user .ask {
+    width: 104px;
+    height: 40px;
+    text-align: center;
+    padding-top:10px; 
+    background: #49c0e0;
+    font: 14px "微软雅黑";
+    color: #fff;
+}
+.header .user .ling {
+    width: 16px;
+    height: 40px;
+    text-align: center;
+    margin: -1px 5px 0px 0px;
+    padding-top:10px; 
+    font: 14px "微软雅黑";
+    color: #A3A3A4;
+}
+.header .user .logout {
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    padding-top:10px; 
+    font: 14px "微软雅黑";
+    color: #A3A3A4;
+}
+
+.search {
+    width: 100%;
+    height: 80px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 80px;
+    background: #1890ff;
+    color: #fff;
+    margin-top: 40px;
+}
+.main {
+    width: 100%;
+    height: 650px;
+    background: #FFFFFF;
+}
+/* 个人中心的3个tab标签 */
+.main .big-ul {
+    width: 100%;
+    height: 32px;
+    background: #d8d8dad5;
+    overflow: hidden;
+}
+.main .big-ul li {
+    width: 30%;
+    float: left;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+    list-style: none;
+}
+.main .big-ul .selected {
+    background: #fff;
+}
+.main .big-ul #one {
+    margin-left: 5%;
+}
+.main .big-ul li a {
+    text-decoration: none;
+    color: #A3A3A4;
+}
+.main .big-ul li:hover {
+    background: #fff;
+}
+
+/* 控制显示和隐藏 */
+.main .center {
+    display: none;
+}
+.main .show {
+    display: block;
+}
+
+/* 基本资料的标题和表格 */
+.main .center .zl {
+    width: 90%;
+    height: 32px;
+    margin: 10px auto;
+    padding-left: 10px;
+    line-height: 32px;
+    border-left: 2px solid #4abfe0;
+}
+.main .center .form div {
+    width: 79%;
+    height: 40px;
+    margin: 8px auto;
+    overflow: hidden;
+}
+.main .center .m-c-f-left,.m-c-f-right {
+    width: 509px;
+    height: 40px;
+    line-height: 39px;
+}
+.main .center span b {
+    background: #f2f2f2;
+    float: left;
+    width: 130px;
+    height: 39px;
+    font-family: arial;
+    font-weight: normal;
+    border: 1px dashed #dedede;
+    box-sizing: border-box;
+    text-align: center;
+}
+.main .center span i {
+    font-family: arial;
+    font-style: normal;
+    font-weight: normal;
+    padding-left: 37px;
+    float: left;
+    background: #fff;
+    width: 379px;
+    height: 39px;
+    border: 1px dashed #dedede;
+    box-sizing: border-box;
+    text-align: left;
+}
+.main .center .m-c-f-left {
+    float: left;
+    margin-left: 15px;
+}
+.main .center .m-c-f-right {
+    float: right;
+    margin-right: 15px;
+}
+/* 修改密码的css样式 */
+.main .center .c-main {
+    width: 362px;
+    height: 317px;
+    margin: 40px auto;
+}
+.main .center .c-main .c-m-tutu {
+    width: 160px;
+    height: 40px;
+    margin: 10px auto;
+    font-size: 14px;
+    color: #1890ff
+}
+.main .center .c-main .c-m-pod,.c-m-npod{
+    font-size: 14px;
+    color: #303030;
+}
+.main .center .c-main input {
+    width: 362px;
+    height: 42px;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    text-indent: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main .center .c-main .c-m-data {
+    font-size: 12px;
+    color: #acacac;
+}
+.main .center .c-main button {
+    width: 362px;
+    height: 40px;
+    background-color: #49c0e0;
+    border-radius: 5px;
+    color: #ffffff;
+    margin-top: 28px;
+    border: none;
+}
+/* 意见反馈css样式 */
+.main .center .c-title {
+    width: 100%;
+    height: 40px;
+}
+.main .center .small-ul {
+    width: 50%;
+    height: 39px;
+    text-align: center;
+    line-height: 39px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+.main .center .small-ul li {
+    width: 33%;
+    float: left;
+    list-style: none;
+    font-size: 14px;
+}
+.main .center .c-neck {
+    width: 85%;
+    height: 28px;
+    margin: 10px auto;
+    line-height: 28px;
+    border-left: 2px solid #49c0e0;
+    overflow: hidden;
+}
+.main .center .c-neck .c-n-left {
+    float: left;
+    padding-left: 10px;
+}
+.main .center .c-neck .c-n-right {
+    width: 100px;
+    height: 28px;
+    font-size: 12px;
+    float: right;
+    text-align: center;
+    margin-right: 20px;
+    background-color: #49c0e0;
+    color: #ffffff;
+    box-sizing: border-box;
+    border: none;
+}
+.main .center .c-body .c-b1 {
+    width: 85%;
+    height: 40px;
+    margin: 2px auto;
+    line-height: 40px;
+    overflow: hidden;
+    font-size: 14px;
+}
+.main .center .c-body .c-b1 div {
+    float: left;
+    box-sizing: border-box;
+}
+.main .center .c-body .c-b1 .c-b1-1 {
+    width: 60%;
+    padding-left: 10px;
+}
+.main .center .c-body .c-b1 .c-b1-2,.c-b1-4 {
+    width: 15%;
+    text-align: center;
+}
+.main .center .c-body .c-b1 .c-b1-3 {
+    width: 10%;
+    text-align: center;
+}
+.main .center .c-body .c-b1 .c-b1-4 a {
+    text-decoration: none;
+}
+
+
+
+
+
+.footer {
+    width: 100%;
+    height: 126px;
+    background: url(../images/ditu.jpg);
+    padding-top: 30px;
+    bottom: 0;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+.footer .bbox {
+    width: 600px;
+    margin: 0 auto;
+
+}
+.footer .bbox .b1 {
+    width: 600px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: #afb0b2;
+    margin:0px 0px 8px 0px;
+    font: 16px "微软雅黑";
+
+}
+.footer .bbox .b1 img {
+    width: 200px;
+    height: 30px;
+    vertical-align: middle;
+}
+.footer .bbox .b1 .line {
+    color: #6c7177;
+    font-weight: 100;
+    margin-left: 10px;
+}
+.footer .bbox .b2 {
+    width: 100%;
+    height: 25px;
+}
+.footer .bbox .b2 .bb1,.bb2,.bb3 {
+    font: 14px "微软雅黑";
+    color: #afb0b2;
+    text-decoration: none;
+}
+.footer .bbox .b2 .bb1 {
+    margin-left: 158px; 
+}
+.footer .bbox .b2 .bb2,.bb3 {
+    margin-left: 60px; 
+}
+.footer .bbox .b3 {
+    width: 600px;
+    height: 30px;
+    color: #6f7376;
+    font: 12px "微软雅黑";
+    text-align: center;
+    line-height: 30px;
+}
