@@ -128,16 +128,16 @@
                     </div>
                 </div>
                 <div class="c-b1">
-                    <div class="c-b1-1">Lorem ipsum dolor sit amet.</div>
+                    <div class="c-b1-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quia autem culpa mollitia ratione corporis perspiciatis quos quis! Quod aperiam recusandae nemo non id dolorem vel itaque corrupti.</div>
                     <div class="c-b1-2">1999-01-02 00:35</div>
                     <div class="c-b1-3">已回复</div>
-                    <div class="c-b1-4">展开问题</div>
+                    <div class="c-b1-4">展开问题+</div>
                 </div>
                 <div class="c-b1">
-                    <div class="c-b1-1">Lorem ipsum dolor sit amet.</div>
+                    <div class="c-b1-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor explicabo aut sint assumenda quaerat rem corrupti tempora dignissimos enim magnam.</div>
                     <div class="c-b1-2">1999-01-02 00:35</div>
                     <div class="c-b1-3">已回复</div>
-                    <div class="c-b1-4">展开问题</div>
+                    <div class="c-b1-4">展开问题+</div>
                 </div>
             </div>
         </div>
@@ -163,8 +163,6 @@
         // 第一部分，tab标签切换
         var tabs = document.querySelectorAll('.big-ul li');
         var contents = document.querySelectorAll('.center');
-        console.log(tabs);
-        console.log(contents);
         (function changeTab(){
             for(var i=0;i<tabs.length;i++){
                 tabs[i].onclick = showTab;
@@ -181,6 +179,34 @@
                 }
             }
         }
+    // 1.展开问题
+    // 布局：每一个意见反馈的结构必须完全相同
+    // js实现：
+    // 1.首先找到所有 展开问题div 的集合
+    // 2.通过for循环为其绑定点击事件
+    // 3.进行判断 到底是展开还是收起   判断条件：展开问题div的内容
+    // 修改    div的内容需要修改
+    // 展开部分 显示或隐藏
+    
+    
+    window.onload=function () {//加载完毕
+        var hidediv=document.getElementsByClassName('c-b1-1'),
+            btn=document.getElementsByClassName('c-b1-4');
+            // console.log(hidediv);
+            // console.log(btn);
+            // hflag=1;//标记是否隐藏
+        btn.onclick=function () {
+            if (btn.innerHTML=="展开问题+") {//当前为收起状态，展开函数
+                hidediv.style.height = '100px';
+                btn.innerHTML="收起问题-";
+                // hflag=0;
+            }else {//当前为展开状态，收起函数
+                hidediv.style.height = "40px";
+                btn.innerHTML="展开问题+";
+                // hflag=1;
+            }    
+        }
+    }
     </script>
 </body>
 </html>
