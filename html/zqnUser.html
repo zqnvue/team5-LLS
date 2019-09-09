@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../css/zqnUser.css">
     <title>个人中心</title>
 </head>
+
 <body>
     <div class="bar">
         <div class="logo">
@@ -84,7 +86,7 @@
                 <span class="c-n-left">我的意见反馈</span>
                 <span class="c-n-right">新建反馈</span>
             </div>
-            <div class="c-body">
+            <div class="c-body" style="display: block">
                 <div class="c-b1">
                     <div class="c-b1-1"><b>意见</b></div>
                     <div class="c-b1-2"><b>发布时间</b></div>
@@ -128,17 +130,41 @@
                     </div>
                 </div>
                 <div class="c-b1">
-                    <div class="c-b1-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quia autem culpa mollitia ratione corporis perspiciatis quos quis! Quod aperiam recusandae nemo non id dolorem vel itaque corrupti.</div>
+                    <div class="c-b1-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quia autem
+                        culpa mollitia ratione corporis perspiciatis quos quis! Quod aperiam recusandae nemo non id
+                        dolorem vel itaque corrupti.</div>
                     <div class="c-b1-2">1999-01-02 00:35</div>
                     <div class="c-b1-3">已回复</div>
                     <div class="c-b1-4">展开问题+</div>
                 </div>
                 <div class="c-b1">
-                    <div class="c-b1-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor explicabo aut sint assumenda quaerat rem corrupti tempora dignissimos enim magnam.</div>
+                    <div class="c-b1-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor explicabo aut
+                        sint assumenda quaerat rem corrupti tempora dignissimos enim magnam.</div>
                     <div class="c-b1-2">1999-01-02 00:35</div>
                     <div class="c-b1-3">已回复</div>
                     <div class="c-b1-4">展开问题+</div>
                 </div>
+            </div>
+            <div class="c-body" style="display: none">
+                <p>
+                    <span>*问题分类:</span>
+                    <select name="" id="">
+                        <option value="0">用户体验1</option>
+                        <option value="1">用户体验2</option>
+                        <option value="2">用户体验3</option>
+                        <option value="3">用户体验4</option>
+                    </select>
+                </p>
+                <p>
+                    <span class="c-m-pod">*意见:</span>
+                    <input type="text" placeholder="请在这里输入你的意见">
+                </p>
+                <p>
+                    <span class="c-m-pod">问题说明:</span>
+                    <input type="text" placeholder="问题背景、问题介绍等详细信息">
+                </p>
+                <input type="text">
+                <button>提交问题</button>
             </div>
         </div>
     </div>
@@ -160,53 +186,68 @@
         </div>
     </div>
     <script>
+        // 新建反馈功能
+        var newBtn = document.querySelector('.c-neck .c-n-right');
+        newBtn.onclick = (e) => {
+            var boxAll = document.querySelectorAll('.center .c-body');
+            var boxDis = window.getComputedStyle(boxAll[0]).display;
+            var newTit = document.querySelector('.c-neck .c-n-left');
+            if(boxDis == 'none') {
+                boxAll[0].style.display = 'block';
+                boxAll[1].style.display = 'none';
+                newTit.innerHTML="我的意见反馈";
+                e.target.innerHTML="新建反馈";
+            }else {
+                boxAll[0].style.display = 'none';
+                boxAll[1].style.display = 'block';
+                newTit.innerHTML="意见反馈";
+                e.target.innerHTML="我的意见"
+            }
+        }
         // 第一部分，tab标签切换
         var tabs = document.querySelectorAll('.big-ul li');
         var contents = document.querySelectorAll('.center');
-        (function changeTab(){
-            for(var i=0;i<tabs.length;i++){
+        (function changeTab() {
+            for (var i = 0; i < tabs.length; i++) {
                 tabs[i].onclick = showTab;
             }
         })();
-        function showTab(){
-            for(var i=0;i<tabs.length;i++){
-                if(tabs[i] === this){
+
+        function showTab() {
+            for (var i = 0; i < tabs.length; i++) {
+                if (tabs[i] === this) {
                     tabs[i].className = "selected";
                     contents[i].className = "center show";
-                }else{
+                } else {
                     tabs[i].className = "";
                     contents[i].className = "center";
                 }
             }
         }
-    // 1.展开问题
-    // 布局：每一个意见反馈的结构必须完全相同
-    // js实现：
-    // 1.首先找到所有 展开问题div 的集合
-    // 2.通过for循环为其绑定点击事件
-    // 3.进行判断 到底是展开还是收起   判断条件：展开问题div的内容
-    // 修改    div的内容需要修改
-    // 展开部分 显示或隐藏
-    
-    
-    window.onload=function () {//加载完毕
-        var hidediv=document.getElementsByClassName('c-b1-1'),
-            btn=document.getElementsByClassName('c-b1-4');
-            // console.log(hidediv);
-            // console.log(btn);
-            // hflag=1;//标记是否隐藏
-        btn.onclick=function () {
-            if (btn.innerHTML=="展开问题+") {//当前为收起状态，展开函数
-                hidediv.style.height = '100px';
-                btn.innerHTML="收起问题-";
-                // hflag=0;
-            }else {//当前为展开状态，收起函数
-                hidediv.style.height = "40px";
-                btn.innerHTML="展开问题+";
-                // hflag=1;
-            }    
+        // 1.展开问题
+        // 布局：每一个意见反馈的结构必须完全相同
+        // js实现：
+        // 1.首先找到所有 展开问题div 的集合
+        // 2.通过for循环为其绑定点击事件
+        // 3.进行判断 到底是展开还是收起   判断条件：展开问题div的内容
+        // 修改    div的内容需要修改
+        // 展开部分 显示或隐藏
+
+        // 展开问题功能
+        var btnTogg = document.querySelectorAll('.c-body .c-b1 .c-b1-4');
+        for (var i = 0; i < btnTogg.length; i++) {
+            btnTogg[i].onclick = (e) => {
+                if (e.target.innerHTML == "展开问题+") {
+                    // var boxH = window.getComputedStyle(e.target.parentElement, null).height;
+                    e.target.parentElement.style.height = "120px";
+                    e.target.innerHTML = "收起问题-";
+                } else if(e.target.innerHTML == "收起问题-") {
+                    e.target.parentElement.style.height = "40px";
+                    e.target.innerHTML = "展开问题+";
+                }
+            }
         }
-    }
     </script>
 </body>
+
 </html>

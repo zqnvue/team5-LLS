@@ -132,7 +132,7 @@
     color: #A3A3A4;
 }
 .main .big-ul li:hover {
-    background: #fff;
+    background: rgb(241, 237, 238);
 }
 
 /* 控制显示和隐藏 */
@@ -277,6 +277,52 @@
     box-sizing: border-box;
     border: none;
 }
+.main .center .c-body {
+    width: 80%;
+    margin: 0px auto;
+}
+.main .center .c-body p {
+    width: 100%;
+    height: 30px;
+    margin: 15px 0px;
+}
+.main .center .c-body p select {
+    width: 20%;
+    height: 30px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    color: #606060;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+}
+.main .center .c-body p input {
+    width: 30%;
+    height: 30px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    color: #606060;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+}
+.main .center .c-body>input {
+    width: 50%;
+    height: 200px;
+    margin-top: 50px;
+    color: #606060;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    display: block;
+}
+.main .center .c-body>button {
+    width: 100px;
+    height: 30px;
+    background-color: #49c0e0;
+    border-radius: 5px;
+    color: #ffffff;
+    margin-top: 28px;
+    border: none;
+}
+
 .main .center .c-body .c-b1 {
     width: 85%;
     height: 40px;
@@ -291,6 +337,7 @@
 }
 .main .center .c-body .c-b1 .c-b1-1 {
     width: 60%;
+    /* height: 40px; */
     padding-left: 10px;
 }
 .main .center .c-body .c-b1 .c-b1-2,.c-b1-4 {
