@@ -75,8 +75,9 @@
               </div>
             </div> 
             <div id="content">
-                <div id="content1">
-                    <div class="sp-l">
+                  <div id="content1">
+                   <div id="vedio1">
+                    <div class="sp-l" id="vedio-1">
                         <video class="l-vedio" src="../mp4/kxsp.mp4" controls width="650"></video>
                     </div>
                     <div class="sp-r">
@@ -87,12 +88,49 @@
                         <span>02-IDE的使用.mp4</span>
                         <span>03-安装atom.mp4</span> -->
                         <ul>
-                          <li>01-web基础知识.mp4</li>
-                          <li>02-IDE的使用.mp4</li>
-                          <li>03-安装atom.mp4</li>
+                          <li><a href="#vedio-1">01-web基础知识.mp4</a></li>
+                          <li><a href="#vedio-2">02-IDE的使用.mp4</a></li>
+                          <li><a href="#vedio-3">03-安装atom.mp4</a></li>
                         </ul>
                     </div>
-                </div>
+                   </div>
+                  </div>
+                  <div id="vedio2">
+                    <div class="sp-2" id="vedio-2">
+                        <vedio class="2-vedio" src="../mp4/yiheyuan.mp4" controls width="650"></vedio>
+                    </div>
+                    <div class="sp-r">
+                        <div>
+                          <span>视频播放列表</span>
+                        </div>
+                          <!-- <span>01-web基础知识.mp4</span>
+                          <span>02-IDE的使用.mp4</span>
+                          <span>03-安装atom.mp4</span> -->
+                          <ul>
+                            <li><a href="#vedio-1">01-web基础知识.mp4</a></li>
+                            <li><a href="#vedio-2">02-IDE的使用.mp4</a></li>
+                            <li><a href="#vedio-3">03-安装atom.mp4</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div id="vedio3">
+                    <div class="sp-3" id="vedio-3">
+                    <vedio class="3-vedio" src="../mp4/houhai.mp4" controls width="650"></vedio>
+                    </div>
+                    <div class="sp-r">
+                        <div>
+                          <span>视频播放列表</span>
+                        </div>
+                          <!-- <span>01-web基础知识.mp4</span>
+                          <span>02-IDE的使用.mp4</span>
+                          <span>03-安装atom.mp4</span> -->
+                          <ul>
+                            <li><a href="#vedio-1">01-web基础知识.mp4</a></li>
+                            <li><a href="#vedio-2">02-IDE的使用.mp4</a></li>
+                            <li><a href="#vedio-3">03-安装atom.mp4</a></li>
+                          </ul>
+                      </div>
+                  </div>
                 <div id="content4">
                     <div class="add">
                         <div class="add-l">
@@ -161,6 +199,28 @@
       as[i].onclick=function(){
         //隐藏其他的div
         var divs=document.querySelectorAll("#content>div");
+        for(var i=0;i<divs.length;i++){
+          divs[i].style.display="none";
+        }
+        //让对应的div显示
+        //获得当前a的href
+        var i=this.href.lastIndexOf("#");
+        var id=this.href.slice(i);
+        console.log(id);
+        document.querySelector(id).style.display="block";
+      }
+
+    }
+
+     //需求：当点击某一个标签的时候，视频按照需求展现
+    //查找触发事件的元素 a
+    var bs=document.querySelectorAll(".sp-r ul li a");
+    //遍历
+    for(var i=0;i<bs.length;i++){
+      //绑定事件处理函数
+      bs[i].onclick=function(){
+        //隐藏其他的div
+        var divs=document.querySelectorAll("#content1>div");
         for(var i=0;i<divs.length;i++){
           divs[i].style.display="none";
         }
