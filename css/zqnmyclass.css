@@ -242,16 +242,21 @@
     user-select: none;
  }
 
- .main .m-center {
+ .main #tab-content .m-center {
     width: 1013px;
     overflow: hidden;
     position: relative;
     min-height: 595px;
     box-sizing: border-box;
     background: #fff;
+    top: 10px;
     left: 284px;
+    display: none;
  }
- .main .m-c-top {
+ .main #tab-content .show {
+     display: block;
+ }
+ .main #tab-content .m-center .m-c-top {
     margin: 16px 0px 10px 25px;
     height: 40px;
     line-height: 40px;
@@ -259,7 +264,7 @@
     background: rgb(253, 229, 209);
     color: rgb(244, 130, 117);
 }
-.main .m-c-down .m-c-d-left {
+.main #tab-content .m-center .m-c-down .m-c-d-left {
     width: 690px;
     height: 304px;
     /* background: pink; */
@@ -268,40 +273,45 @@
     float: left;
     box-sizing: border-box;
 }
-.main .m-c-down .m-c-d-right {
+.main #tab-content .m-center .m-c-down .m-c-d-left video {
+    display: none;
+}
+.main #tab-content .m-center .m-c-down .m-c-d-left .show {
+    display: block;
+}
+.main #tab-content .m-center .m-c-down .m-c-d-right {
     width: 298px;
     height: 400px;
     /* background: #1890ff; */
     float: left;
 }
-.main .m-c-down .m-c-d-right .m-c-d-r-top {
-    height: 48px;
+.main #tab-content .m-center .m-c-down .m-c-d-right .m-c-d-r-top1 {
     width: 302px;
+    height: 48px;
     background: rgb(247, 247, 247);
-    margin-bottom: 16px;
+    margin: 16px auto;
 }
-.main .m-center .m-c-down .m-c-d-right .m-c-d-r-top img {
+.main #tab-content .m-center .m-c-down .m-c-d-right .m-c-d-r-top1 .m-c-d-r-top {
+    height: 40px;
+    width: 40%;
+    background: rgb(247, 247, 247);
+    border-bottom:2px solid #4ac6e7;
+    margin: 17px auto;
+}
+.main #tab-content .m-center .m-c-down .m-c-d-right .m-c-d-r-top img {
     width: 18px;
-    margin: 16px 0px 16px 90px;
+    margin: 16px 0px;
     vertical-align: middle;
 }
-.main .m-center .m-c-down .m-c-d-right .m-c-d-r-top span {
+.main #tab-content .m-center .m-c-down .m-c-d-right .m-c-d-r-top span {
     font-size: 16px;
     height: 18px;
     line-height: 18px;
     color: #000;
     vertical-align: middle;
-
-}
-#content1 {
-    display: block;
-}
-#content2,#content3,#content4 {
-    display: none;
 }
 
-
-.main .m-center .m-c-down .m-c-d-right .down2 {
+.main #tab-content .m-center .m-c-down .m-c-d-right .down2 {
     cursor: pointer;
     width: 170px;
     height: 32px;
@@ -315,11 +325,48 @@
     line-height: 32px;
     box-sizing: border-box;
 }
-.main .m-center .m-c-down .m-c-d-right .down2:hover {
+.main #tab-content .m-center .m-c-down .m-c-d-right .down2:hover {
     background: #4ac6e7;
     color: #fff;
 }
 
+/* 添加习题css样式 */
+.main #tab-content .m-center .m-c-testtop {
+    width: 98%;
+    height: 32px;
+    background: #fff;
+    margin: 5px auto;
+    line-height: 32px;
+    padding-left: 5px;
+    border-left: 2px solid #49c0e0; 
+}
+.main #tab-content .m-center .m-c-testtop button {
+    width: 100px;
+    height: 30px;
+    float: right;
+    position: relative;
+    top:1px;
+    right: 10px;
+    background: #49c0e0;
+    border-style: none;
+    color: #fff;
+}
+.main #tab-content .m-center .m-c-testdown p {
+    width: 96%;
+    background: rgb(247, 247, 247);
+    margin: 10px auto;
+    padding: 15px 10px;
+    overflow: hidden;
+}
+.main #tab-content .m-center .m-c-testdown span {
+    float: left;
+    padding-left: 10px;
+}
+.main #tab-content .m-center .m-c-testdown a {
+    float: right;
+    text-decoration: none;
+    color: #000;
+}
 
 
 

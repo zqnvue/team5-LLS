@@ -1,0 +1,441 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100%;
+    width: 100%;
+}
+header{
+    width: 100%;
+    height: 20px;
+}
+header .tb{
+    position: fixed;
+    background: #29392e;
+    height: 40px;
+    width: 210px;
+    display: block;
+    top:0px;
+    left: 40px;
+    float: left;
+    z-index: 499;
+}
+header .tb img{
+    padding-top: 3.5px;
+    padding-left: 5px;
+}
+.headerTop{
+    width: 100%;
+    height: 40px;
+    background: #ffffff;
+    position: fixed;
+    top: 0px;
+    left: 40px;
+    z-index: 400;
+}
+header .my{
+    float: left;
+    margin-left: 300px;
+    height: 40px;
+}
+header .my li{
+    /* float: left; */
+    margin-left: 260px;
+    float: left;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 10px;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+}
+header .my li a{
+    color: #505050;
+    text-decoration: none;
+}
+header .my li a:hover{
+    color: #49c0e0;
+}
+.headerTop .right{
+    float: right;
+    height: 40px;
+    color: #505050;
+    padding-right: 80px;
+    margin-right: 30px;
+}
+.headerTop .right li{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+}
+.headerTop .right li:nth-child(1){
+    width: 20px;
+    margin-right: 5px;
+    height: 40px;
+    line-height: 40px'
+}
+.headerTop .right li:nth-child(1) img{
+    width: 20px;
+    height: 20px;
+}
+.headerTop .right li:nth-child(2){
+    width: 70px;
+}
+.headerTop .right li:nth-child(2) a{
+    text-decoration: none;
+    color: rgb(163, 163, 164);
+}
+.headerTop .right li:nth-child(3){
+    width: 110px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background: #49c0e0;
+}
+.headerTop .right li:nth-child(3) .spana{
+    float: left;
+    height: 40px;
+    margin-right: 5px;
+}
+.headerTop .right li:nth-child(3) .spana img{
+    width: 16px;
+    height: 16px;
+}
+.headerTop .right li:nth-child(3) .spanb{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+}
+.headerTop .right li:nth-child(4){
+    width: 60px;
+}
+.headerTop .right li:nth-child(4) img{
+    width: 18px;
+    height: 18px;
+}
+
+/* 蓝色长背景开始 */
+.bj{
+    width: 100%;
+    height: 75px;
+    background:#66b9ef;
+    margin:20px 0px 0px 0px;
+    text-align: center;
+}
+.bj span{
+    color: #fff;
+    font-size: 20px;
+    line-height: 75px;
+}
+/* 蓝色长背景结束 */
+
+/* 灰色切换条开始 */
+.selected{
+    box-sizing: border-box;
+    background-color:#fff;
+    color:#29392e;
+}
+.bar{
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background: #e3e7e9;
+    float: left;
+}
+.bar-top{
+    width: 90%;
+    line-height: 30px;
+    margin: 0 auto;
+    color: #afb0b2;
+}
+.bar-top li{
+    float: left;
+    width: 33%;
+    list-style: none;
+    cursor: pointer;
+    text-align: center;
+}
+/* 灰色切换条结束 */
+
+/* 基本资料开始 */
+.mean{
+    width: 90%;
+    height: 440px;
+    /* background: pink; */
+    margin-left: 70px;
+    box-sizing: border-box;
+}
+/* 第一页开始 */
+.mean-top{
+    margin-top: 50px;
+    width: 90px;
+    height: 30px;
+    /* background: green; */
+    border-left: 5px solid #66b9ef;
+    text-align: center;
+    line-height: 30px;
+}
+.mean-nr{
+    width: 95%;
+    height: 300px;
+    /* background: yellow; */
+    margin: 15px auto;
+    /* overflow: hidden; */
+}
+.mean-nr-z{
+    width: 49%;
+    height: 300px;
+    /* background: #49c0e0; */
+    float: left;
+}
+ .mean-mc{
+    height: 40px;
+    line-height: 40px;
+    /* border: 1px solid #e3e7e9; */
+    color: #29392e;
+    width: 100%;
+    box-sizing: border-box;
+    margin:0px 0px 7px 0px;
+}
+ .mean-mc div{
+    width: 30%;
+    height: 40px;
+    background: #e3e7e9;
+    text-align: center;
+    float: left;
+    box-sizing: border-box;
+}
+ .mean-mc input{
+    line-height: 38px;
+    width: 70%;
+    float: left;
+    border: 1px solid #e3e7e9;
+    box-sizing: border-box;
+    padding-left: 35px;
+}
+.mean-nr-y{
+    width: 49%;
+    height: 300px;
+    /* background: #84cbdf; */
+    float: right;
+}
+/* 第一页结束 */
+
+/* 第二页开始 */
+/* 进度条开始 */
+.jind{
+    width: 100%;
+    height: 60px;
+    /* background: #66b9ef; */
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+.jind-top{
+    width: 200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.jind span:first-child{
+    line-height: 30px;
+    color: #66b9ef;
+}
+.jind img{
+    width: 30px;
+    line-height: 40px;
+}
+.jind-f{
+    width: 13%;
+    height: 20px;
+    overflow: hidden;
+    margin: 0 auto;
+    line-height: 20px;
+}
+.jind-z{
+    float: left;
+    color: #66b9ef;
+}
+.jind-y{
+    float: right;
+    color: #e3e7e9;
+}
+/* 进度条结束 */
+/* 表单开始 */
+.bd{
+    width: 50%;
+    height: 350px;
+    /* background: gray; */
+    margin: 0 auto;
+    margin-top: 30px;
+}
+form{
+    width: 70%;
+    height: 350px;
+    /* background: #a08ee0; */
+    margin: 0 auto;
+}
+.pwd{
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid #e3e7e9; */
+    line-height: 40px;
+    box-sizing: border-box;
+}
+.bd input{
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid #e3e7e9; */
+    line-height: 40px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.tis{
+    font-size: 14px;
+    color: #e3e7e9;
+    margin: 5px 0px 15px 0px;
+}
+.tij{
+    color: #fff;
+    margin-top: 35px;
+    background: #49c0e0;
+    border-radius: 5px;
+    border: 0;
+}
+/* 表单结束 */
+/* 第二页结束 */
+
+/* 第三页开始 */
+/* 意见条数开始 */
+.view{
+    width: 100%;
+    height: 50px;
+    /* background: #66b9ef; */
+    margin-top: 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.my-view{
+    width: 55%;
+    /* height: 50px; */
+    line-height: 50px;
+    margin: 0 auto;
+    color: #afb0b2;
+    /* background: tan; */
+}
+.view li{
+    float: left;
+    width: 33%;
+    list-style: none;
+    text-align: center;
+    margin: 0 auto;
+}
+.view b{
+    color: green;
+    font-size: 30px;
+    font-style: italic;
+    padding: 0px 3px 0px 3px;
+}
+/* 意见条数结束 */
+/* 意见条数开始 */
+.idea{
+    width: 90%;
+    overflow: hidden;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 10px auto;
+}
+.my-idea{
+    width: 11%;
+    /* background: green; */
+    border-left: 5px solid #66b9ef;
+    float: left;
+}
+.my-fk{
+    width: 11%;
+    background: #66b9ef;
+    float: right;
+    /* margin-right: 30px; */
+}
+.idea img{
+    width: 20px;
+}
+/* 意见条数结束 */
+/* 中心开始 */
+.main-top{
+    width: 87%;
+    height: 300px;
+    margin: 0 auto;
+    /* background: cornsilk; */
+    font-size: 14px;
+}
+.main-top .main-nr span{
+    cursor: pointer;
+}
+.main-bar{
+    width: 100%;
+    height: 50px;
+    background: #e3e7e9;
+    border-radius: 5px;
+    overflow: hidden;
+    line-height: 50px;
+}
+.main-bar span{
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.opinion{
+    float: left;
+    width: 55%;
+    /* background: navy; */
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+.start-time{
+    float: left;
+    width: 20%;
+    /* background: rgb(102, 102, 116); */
+    box-sizing: border-box;
+    text-align: center;
+}
+.status{
+    width: 8%;
+    /* background: aqua; */
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+}
+.operate{
+    float: right;
+    text-align: center;
+    width: 17%;
+    /* background: lightblue; */
+    box-sizing: border-box;
+}
+.main-nr{
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid #e3e7e9; */
+    border-radius: 5px;
+    overflow: hidden;
+    line-height: 50px;
+    white-space: normal;
+    box-sizing: border-box;
+}
+.main-nr span{
+    color: #8a8a8b;
+}
+.main-nr .operate img{
+    width: 15px;
+}
+.main-nr .operate span{
+    color: #66b9ef;
+}
+/* 中心结束 */
+/* 第三页结束 */
+/* 基本资料结束 */
