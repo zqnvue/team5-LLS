@@ -341,101 +341,105 @@ form{
     padding: 0px 3px 0px 3px;
 }
 /* 意见条数结束 */
-/* 意见条数开始 */
-.idea{
-    width: 90%;
-    overflow: hidden;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
+.mean .c-neck {
+    width: 85%;
+    height: 28px;
     margin: 10px auto;
+    line-height: 28px;
+    border-left: 2px solid #49c0e0;
+    overflow: hidden;
 }
-.my-idea{
-    width: 11%;
-    /* background: green; */
-    border-left: 5px solid #66b9ef;
+.mean .c-neck .c-n-left {
     float: left;
+    padding-left: 10px;
 }
-.my-fk{
-    width: 11%;
-    background: #66b9ef;
+.mean .c-neck .c-n-right {
+    width: 100px;
+    height: 28px;
+    font-size: 12px;
     float: right;
-    /* margin-right: 30px; */
+    text-align: center;
+    margin-right: 20px;
+    background-color: #49c0e0;
+    color: #ffffff;
+    box-sizing: border-box;
+    border: none;
 }
-.idea img{
-    width: 20px;
+.mean .c-body {
+    width: 85%;
+    margin: 0px auto;
 }
-/* 意见条数结束 */
-/* 中心开始 */
-.main-top{
-    width: 87%;
-    height: 300px;
-    margin: 0 auto;
-    /* background: cornsilk; */
+.mean .c-body p {
+    width: 100%;
+    height: 30px;
+    margin: 15px 0px;
+}
+.mean .c-body p select {
+    width: 20%;
+    height: 30px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    color: #606060;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+}
+.mean .c-body p input {
+    width: 30%;
+    height: 30px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    color: #606060;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+}
+.mean .c-body>input {
+    width: 50%;
+    height: 200px;
+    margin-top: 50px;
+    color: #606060;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    display: block;
+}
+.mean .c-body>button {
+    width: 100px;
+    height: 30px;
+    background-color: #49c0e0;
+    border-radius: 5px;
+    color: #ffffff;
+    margin-top: 28px;
+    border: none;
+}
+
+.mean .c-body .c-b1 {
+    width: 85%;
+    height: 40px;
+    margin: 2px auto;
+    line-height: 40px;
+    overflow: hidden;
     font-size: 14px;
 }
-.main-top .main-nr span{
-    cursor: pointer;
-}
-.main-bar{
-    width: 100%;
-    height: 50px;
-    background: #e3e7e9;
-    border-radius: 5px;
-    overflow: hidden;
-    line-height: 50px;
-}
-.main-bar span{
-    cursor: pointer;
-    box-sizing: border-box;
-}
-.opinion{
+.mean .c-body .c-b1 div {
     float: left;
-    width: 55%;
-    /* background: navy; */
     box-sizing: border-box;
-    padding-left: 15px;
 }
-.start-time{
-    float: left;
-    width: 20%;
-    /* background: rgb(102, 102, 116); */
-    box-sizing: border-box;
+.mean .c-body .c-b1 .c-b1-1 {
+    width: 60%;
+    /* height: 40px; */
+    padding-left: 10px;
+}
+.mean .c-body .c-b1 .c-b1-2,.c-b1-4 {
+    width: 15%;
     text-align: center;
 }
-.status{
-    width: 8%;
-    /* background: aqua; */
-    float: left;
+.mean .c-body .c-b1 .c-b1-3 {
+    width: 10%;
     text-align: center;
-    box-sizing: border-box;
 }
-.operate{
-    float: right;
-    text-align: center;
-    width: 17%;
-    /* background: lightblue; */
-    box-sizing: border-box;
+.mean .c-body .c-b1 .c-b1-4 a {
+    text-decoration: none;
 }
-.main-nr{
-    width: 100%;
-    height: 50px;
-    /* border: 1px solid #e3e7e9; */
-    border-radius: 5px;
-    overflow: hidden;
-    line-height: 50px;
-    white-space: normal;
-    box-sizing: border-box;
-}
-.main-nr span{
-    color: #8a8a8b;
-}
-.main-nr .operate img{
-    width: 15px;
-}
-.main-nr .operate span{
-    color: #66b9ef;
-}
+/* 展开问题结束 */
 /* 中心结束 */
 /* 第三页结束 */
 /* 基本资料结束 */
