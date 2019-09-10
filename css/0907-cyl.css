@@ -342,10 +342,12 @@ button{
 .ght-r{
     float:right;
     overflow: hidden;
-    margin-right:250px;
+    margin-right:50px;
     margin-top:10px;
-    width:200px;
+    width:400px;
+    background: #ccc;
 }
+
 .ght-l1{
     float:left;
 }
@@ -357,7 +359,9 @@ button{
 }
 .ght-r4{
     float:right;
+    height:1200px;
 }
+
 #main1{
     display:none;
 }
@@ -374,3 +378,54 @@ button{
     margin-top:8px;
     color:rgb(32, 95, 178);
 }
+.r4-zk{
+    display:none;
+}
+
+/* 新建反馈页面 */
+.xjfk span i{
+    color:red;
+}
+.fk-header{
+    margin-top:34px;
+}
+.fk-header span{
+  border-left:4px solid rgba(74, 202, 253, 0.712);
+  margin-left:40px;
+  font-size:20px;
+}
+.fk-header button{
+  margin-right:100px;
+  float:right;
+}
+.wtfl{
+  margin-left: 200px;
+}
+.yj{
+  margin-left: 200px;
+  margin-top:16px;
+}
+.smfl{
+  margin-left: 200px; 
+  margin-top:16px;
+}
+.xjfk-btn{
+  margin-left:-740px;
+  margin-top:280px;
+}
+.xjfk select{
+    width:120px;
+    height:24px;
+    line-height: 24px;
+}
+.yj input{
+    width:220px;
+}
+.smfl input{
+    width:260px;
+    height:160px;
+}
+#xjfk1{
+    display:none;
+}
+

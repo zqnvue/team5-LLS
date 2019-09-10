@@ -105,7 +105,7 @@
             </div>
             <div class="yjfk-main">
                 <span>我的意见反馈</span>
-                <button type="submit">新建反馈</button>
+                <button type="submit"><a href="#xjfk1">新建反馈</a></button>
             </div>
             <div class="yjfk-weight">
                 <span class="ght-one">意见</span>
@@ -157,56 +157,105 @@
                  <span>编辑</span>
                  <span>删除</span>
                 </div>
+              <div class="zk">
                 <div class="ght-r4-4"> 
-                    <span>
-                      展开问题
-                    </span>
-                    <div>
+                        <div class="r4-zk-l" id="r4-zk-l-1">
+                             <span>
+                                <a href="#r4-zk-1">展开问题</a>      
+                             </span>
+                         </div>
+                    <div class="r4-zk" id="r4-zk-1">
+                            <span><a href="#r4-zk-l-1">收起问题</a></span>
                         <p>意见说明</p>
                         <p>添加笔记时建议添加成功之后，输入键收起</p>
                         <p>管理员反馈</p>
                         <p>意见已反馈，谢谢反馈</p>
                     </div>
                 </div>
-                <div class="ght-r4-5"> 
-                        <span>
-                          展开问题
-                        </span>
+                <div class="ght-r4-4"> 
+                        <div class="r4-zk-l" id="r4-zk-l-2">
+                             <span>
+                                <a href="#r4-zk-2">展开问题</a>   
+                              </span>
+                        </div>
+                    <div class="r4-zk" id="r4-zk-2">
+                            <span><a href="#r4-zk-l-2">收起问题</a></span>
+                            <p>意见说明</p>
+                            <p>添加笔记时建议添加成功之后，输入键收起</p>
+                            <p>管理员反馈</p>
+                            <p>意见已反馈，谢谢反馈</p>
+                     </div>
                 </div>
-                <div class="ght-r4-6"> 
-                        <span>
-                          展开问题
-                        </span>
+                <div class="ght-r4-4">
+                     <div class="r4-zk-l" id="r4-zk-l-3">
+                         <span>
+                            <a href="#r4-zk-3">展开问题</a>  
+                         </span>
+                     </div>  
+                    <div class="r4-zk" id="r4-zk-3">
+                          <span><a href="#r4-zk-l-3">收起问题</a></span>
+                            <p>意见说明</p>
+                            <p>添加笔记时建议添加成功之后，输入键收起</p>
+                            <p>管理员反馈</p>
+                            <p>意见已反馈，谢谢反馈</p>
+                    </div>
                 </div>
-                <div class="ght-r4-7"> 
+                <div class="ght-r4-4">
+                    <div class="r4-zk-l" id="r4-zk-l-4">
                         <span>
-                          展开问题
+                            <a href="#r4-zk-4"> 展开问题</a>  
                         </span>
-                </div>
+                    </div>  
+                   <div class="r4-zk" id="r4-zk-4">
+                         <span><a href="#r4-zk-l-4">收起问题</a></span>
+                           <p>意见说明</p>
+                           <p>添加笔记时建议添加成功之后，输入键收起</p>
+                           <p>管理员反馈</p>
+                           <p>意见已反馈，谢谢反馈</p>
+                   </div>
+               </div>
+              </div>
             </div>
            </div>
          </div>
         </div>
-        <!-- <div class="xjfk2">
-            <div class="yjfk-header">
-                <span>我的意见9条</span>
-                <span>已恢复6条</span>
-                <span>未回复3条</span>
+        <div class="xjfk" id="xifk1">
+            <div class="fk-header">
+                <span>意见反馈</span>
+                <button type="submit">我的意见</button>
             </div>
-        </div> -->
+            <div class="wtfl">
+                <span><i>*</i>问题分类：</span>
+                <select name="" id="">
+                    <option value="">用户体验</option>
+                    <option value="">网络问题</option>
+                </select>
+            </div>
+            <div class="yj">
+                <span><i>*</i>意见：</span>
+                  <input type="text" placeholder="请在这里输入你的问题（60个字符内）">
+            </div>
+            <div class="smfl">
+                <span><i>*</i>问题说明：</span>
+                  <input type="text" placeholder="问题背景条件等详细信息">
+            </div>
+            <div class="xjfk-btn">
+                <button type="submit">提交反馈</button>
+            </div>
+        </div>
     </div>
     
     
     <script>
     //需求：当点击某一个标签的时候，下面对应的div显示，其他div隐藏
     //查找触发事件的元素 a
-    var as=document.querySelectorAll("#tab a");
+    var as=document.querySelectorAll(".r4-zk-l span a");
     //遍历
     for(var i=0;i<as.length;i++){
       //绑定事件处理函数
       as[i].onclick=function(){
         //隐藏其他的div
-        var divs=document.querySelectorAll("#main>div");
+        var divs=document.querySelectorAll(".ght-r4-4>div");
         for(var i=0;i<divs.length;i++){
           divs[i].style.display="none";
         }
@@ -222,7 +271,7 @@
     
 
 
-     //需求：当点击某一个标签的时候，下面对应的div显示，其他div隐藏
+     //需求：当点击展开问题的时候，下面对应的内容显示，其他div隐藏
     //查找触发事件的元素 a
     var as=document.querySelectorAll("#tab a");
     //遍历
@@ -243,6 +292,9 @@
       }
 
     }
+
+
+
 
 
 
